@@ -1,1 +1,42 @@
 /* CSS declarations go here */
+html {
+  height: 100%;
+}
+html, body, main {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+nav {
+  background: #37474F;
+}
+h1, h2, h3 {
+  text-align: center;
+}
+h4 {
+  padding: 4px;
+}
+header h2 {
+  background-color: white;
+  color: #37474F;
+}
+h3 {
+  background-color: #37474F;
+  color: #FFECB3;
+}
+nav ul {
+  padding: 0;
+  text-align: center;
+}
+nav li {
+  padding: 4px;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+img.logo {
+  width: 100%;
+}
+p {
+  padding: 6px;
+}
+
