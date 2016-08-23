@@ -24,8 +24,13 @@ h3 {
   background-color: #37474F;
   color: #FFECB3;
 }
+nav {
+  margin: 0;
+  padding: 0;
+}
 nav ul {
   padding: 0;
+  margin: 0;
   text-align: center;
 }
 nav li {
@@ -40,3 +45,93 @@ p {
   padding: 6px;
 }
 
+div {
+}
+.container {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero.container {
+  margin-top: 15%;
+  margin-bottom: 5%;
+  padding: 25px;
+}
+.title.container h1 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+.title.container h2 {
+  font-size: 1.2rem;
+}
+.pitch {
+  text-align: center;
+}
+.pitch {
+  text-align: left;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  padding: 12px;
+  margin: 4px;
+  background-color: #37474F;
+  color: #FFECB3;
+  border-radius: 50%;
+}
+.pitch p {
+  margin: auto;
+}
+.title.container {
+  text-align: center;
+}
+.title-section {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  margin: 4px;
+}
+.title-section h2{
+  padding: 0;
+  margin: 0;
+}
+.circle b, .day h4 {
+  font-style: oblique;
+  font-family: "Georgia", serif;
+  font-weight: 700;
+}
+.title-section span{
+  font-style: oblique;
+  opacity: .6;
+  font-family: "Georgia", serif;
+  text-transform: none;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.title-section a {
+  color: black;
+}
+.days.container {
+  text-align: center;
+}
+.days hr {
+  //margin: 0;
+}
+.day {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  max-width: 320px;
+  padding: 12px;
+  margin: 4px;
+  text-align: left;
+}
+.day h2 {
+  font-size: 2rem;
+}
+.day h4 {
+  margin-top: -0.7rem;
+  font-size: 1.3rem;
+}
