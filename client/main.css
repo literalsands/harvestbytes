@@ -55,7 +55,7 @@ div {
 .hero.container {
   margin-top: 15%;
   margin-bottom: 5%;
-  padding: 25px;
+  //padding: 25px;
 }
 .title.container h1 {
   font-size: 2rem;
@@ -90,7 +90,7 @@ div {
   display: inline-block;
   width: 100%;
   max-width: 300px;
-  padding: 12px;
+  //padding: 12px;
   margin: 4px;
 }
 .title-section h2{
@@ -124,7 +124,7 @@ div {
   display: inline-block;
   width: 100%;
   max-width: 320px;
-  padding: 12px;
+  //padding: 12px;
   margin: 4px;
   text-align: left;
 }
@@ -134,4 +134,17 @@ div {
 .day h4 {
   margin-top: -0.7rem;
   font-size: 1.3rem;
+}
+.spacer {
+  display: inline-block;
+  width: 40px;
+}
+
+@media (max-width: 720px) {
+  .spacer {
+    display: none;
+  }
+}
+.container.large {
+  max-width: 950px;
 }

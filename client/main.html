@@ -5,10 +5,6 @@
 </head>
 
 <body>
-  {{> main}}
-</body>
-
-<template name="main">
   <nav>
     <div class="container">
       <ul>
@@ -99,7 +95,7 @@
 
       </section>
       <section>
-        <div class="days container">
+        <div class="days container large">
           <div class="day">
             <h2>Friday (Oct 28) at 5pm</h2>
             <hr />
@@ -109,12 +105,14 @@
               We'll kick it all off with a 23-hour hackathon! Hack and explore your creativity over six categories garaunteed to stretch your understanding of food and your relationship with it. When the bell tolls 4pm, presentations and judging will start.
             </p>
           </div>
+          <div class="spacer">
+          </div>
           <div class="day">
             <h2>Saturday (Oct 29) at 6pm</h2>
             <hr />
             <h4>Speaker Dr. Steve Fountain: "Hacking the Microbiome"</h4>
-            <h4>Socratic Style Cocktail Hour</h4>
-            <h4>Farm to Table Dinner Experience with Chefs Charleen Tinley and Jonathan Marks</h4>
+            <!-- <h4>Socratic Style Cocktail Hour</h4> -->
+            <h4>Farm to Table Dinner <!--Experience with Chefs Charleen Tinley and Jonathan Marks--></h4>
             <p>
               Learn about the intersection of microbes and wellness from speaker Dr. Steve Fountain. Partake in an intellectually satisfying and gastronomically-elegant farm-to-table meal crafted by the dynamic duo of Chef Charleen Tinley of Culinary Connections and Chef Jonathan Marks, formerly of the Rooster's Beak.
             </p>
@@ -233,9 +231,13 @@
         <h3>Sponsor information</h3>
         <div class="container">
           <p>
-            If you or your company would like to donate a silent auction item, prize, be a judge, or support our endeavors please consider becoming a sponsor.  {{contact}}
+            If you or your company would like to donate a silent auction item, prize, be a judge, or support our endeavors please consider becoming a sponsor.  {{> main}}
           </p>
         </div>
       </section>
     </main>
-  </template>
+</body>
+
+<template name="main">
+  {{contact}}
+</template>
