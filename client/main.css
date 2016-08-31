@@ -21,8 +21,10 @@ header h2 {
   color: #37474F;
 }
 h3 {
-  background-color: #37474F;
-  color: #FFECB3;
+  font-family: "Georgia", serif;
+  font-weight: 800;
+  font-style: oblique;
+  color: #262626;
 }
 nav {
   margin: 0;
@@ -51,10 +53,12 @@ div {
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px;
 }
 .hero.container {
   margin-top: 15%;
   margin-bottom: 5%;
+  padding: 0;
   //padding: 25px;
 }
 .title.container h1 {
@@ -102,7 +106,7 @@ div {
   font-family: "Georgia", serif;
   font-weight: 700;
 }
-.title-section span{
+.title-section span, .menu h3, .light{
   font-style: oblique;
   opacity: .6;
   font-family: "Georgia", serif;
@@ -140,6 +144,7 @@ div {
 .spacer {
   display: inline-block;
   width: 40px;
+  height: 40px;
 }
 
 @media (max-width: 720px) {
@@ -149,4 +154,111 @@ div {
 }
 .container.large {
   max-width: 950px;
+}
+
+footer {
+  color: #FFF8E1;
+  background-color: #3E2723;
+}
+footer #about, footer #sponsors {
+  background-color: #5D4037;
+}
+footer #credit {
+  padding: 8px;
+}
+footer h3 {
+  margin: 0;
+  padding: 8px 0px;
+  background-color: #6D4C41;
+  color: inherit;
+}
+footer .container a {
+  float: right;
+  text-decoration: none;
+  color: inherit;
+}
+
+footer section {
+  margin: 0;
+  padding: 0;
+}
+
+footer .container {
+  padding: 8px;
+}
+
+img.sponsor {
+  height: 125px;
+  width: auto;
+  display: inline-block;
+}
+
+.person {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
+
+@media (max-width: 643px) {
+  .charleen {
+    margin-right: 41%;
+  }
+  .jonathan {
+    margin-left: 41%;
+    margin-top: -30px;
+  }
+}
+
+#dinner {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+#dinner .day {
+  vertical-align: middle;
+}
+
+.logos {
+  text-align: center;
+}
+
+#dinner h3 {
+
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu li {
+  padding: 4px;
+}
+
+.beverages li {
+  display: inline-block;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+.hackathon-categories {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.hackathon-categories li {
+  padding-bottom: 12px;
 }
