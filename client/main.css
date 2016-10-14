@@ -141,6 +141,9 @@ div {
   margin-top: -0.7rem;
   font-size: 1.3rem;
 }
+.day.middle {
+  vertical-align: middle;
+}
 .spacer {
   display: inline-block;
   width: 40px;
@@ -204,7 +207,7 @@ img.sponsor {
   display: inline-block;
 }
 
-@media (max-width: 643px) {
+@media (max-width: 680px) {
   .charleen {
     margin-right: 41%;
   }
@@ -249,16 +252,60 @@ img.sponsor {
 section {
   margin-bottom: 100px;
 }
-
-.hackathon-categories {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
+.hackathon-challenge a {
+  color: black;
   font-weight: 700;
-  font-size: 18px;
+}
+.hackathon-challenge a:hover {
+  color: black;
+  font-weight: 700;
+}
+.hackathon-challenge:nth-child(1) {
+  background-color: #FFEBEE;
+}
+.hackathon-challenge:nth-child(1)  .topic,
+.hackathon-challenge:nth-child(1)  .circle {
+  color: #D32F2F;
+}
+.hackathon-challenge:nth-child(2) {
+  background-color: #E0F2F1;
+}
+.hackathon-challenge:nth-child(2)  .topic,
+.hackathon-challenge:nth-child(2)  .circle {
+  color: #00796B;
+}
+.hackathon-challenge:nth-child(3) {
+  background-color: #E8EAF6;
+}
+.hackathon-challenge:nth-child(3)  .topic,
+.hackathon-challenge:nth-child(3)  .circle {
+  color: #303F9F;
+}
+.hackathon-challenge:nth-child(4) {
+  background-color: #FCE4EC;
+}
+.hackathon-challenge:nth-child(4)  .topic,
+.hackathon-challenge:nth-child(4)  .circle {
+  color: #C2185B;
+}
+.hackathon-challenge:nth-child(5) {
+  background-color: #FBE9E7;
+}
+.hackathon-challenge:nth-child(5)  .topic,
+.hackathon-challenge:nth-child(5)  .circle {
+  color: #E64A19;
+}
+.hackathon-challenge:nth-child(6) {
+  background-color: #E1F5FE;
+}
+.hackathon-challenge:nth-child(6)  .topic,
+.hackathon-challenge:nth-child(6)  .circle {
+  color: #0288D1;
+}
+.hackathon-challenge .circle:after {
+  background-color: white;
 }
 
-.hackathon-categories li {
-  padding-bottom: 12px;
+#speaker .person {
+  margin-bottom: 16px;
 }

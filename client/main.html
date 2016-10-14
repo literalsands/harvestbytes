@@ -29,7 +29,7 @@
           </a>
         </li>
         <li>
-          <a href="http://www.meetup.com/HackAugusta/" target="_blank">
+          <a href="http://www.meetup.com/HackAugusta/events/233445962/" target="_blank">
             Meetup
           </a>
         </li>
@@ -90,7 +90,7 @@
           <div class="circle__wrapper">
             <div class="circle__content">
               <p>
-                Join the <b>Clubhou.se</b> and <b>Augusta Locally Grown</b> in downtown Augusta.
+                Join the <b>Clubhou.se</b><br /> and <b>Augusta Locally Grown</b> <br />in downtown Augusta.
               </p>
               <p>
                 Explore where sustainability and technology intersect and improve our local food system.
@@ -133,7 +133,7 @@
             <div class="circle__wrapper">
               <div class="circle__content">
                 <p>
-                  <b>We are looking for sponsors now!</b>
+                  <b>We are looking<br /> for sponsors now!</b><br />
                   Be a part of the thinking crowd and eat well while doing it.
                 </p>
               </div>
@@ -143,6 +143,8 @@
       </a>
       <div class="logos">
         <img class="sponsor" src="whole_foods_logo.png" />
+        <img class="sponsor" src="springtime.jpg" />
+        <img class="sponsor" src="microbial_makeover.jpg" />
       </div>
     </section>
 
@@ -150,16 +152,20 @@
       <h3>Harvest Bytes Hackathon</h3>
       <div class="container">
         <p>
-          Teams of 3-4 persons per team will choose one of six challenges to address centered on local food and technology.  The challenges will be based upon the following categories:
-          <ul class="hackathon-categories">
-            <li>Urban Pollination</li>
-            <li>Green Growing</li>
-            <li>Getting to Market</li>
-            <li>Food Waste</li>
-            <li>Agri-Business</li>
-            <li>Pest and Water Management</li>
-          </ul>
+          Teams of 3-4 persons per team will choose one of six challenges to address centered on local food and technology.
         </p>
+      </div>
+      <div>
+      {{#each hackathonChallenges}}
+      <div class="hackathon-challenge center">
+        <h4 class="topic day center middle">
+          <b>{{topic}}</b>
+        </h4>
+        <p class="details day middle">
+          <b>{{> circle text=details}}</b>
+        </p>
+      </div>
+      {{/each}}
       </div>
     </section>
 
@@ -233,7 +239,7 @@
     <section id="speaker">
       <h3>"Hacking the Microbiome"</h3>
       <h3 class="light">with Dr. Steve Fountain</h3>
-      <div class="container">
+      <div class="container center">
         <div class="day center">
           <div class="person" style="background-image: url('steve_fountain.jpg')">
           </div>
@@ -264,7 +270,7 @@
       <h3>Sponsor Information</h3>
       <div class="container">
         <p>
-          If you or your company would like to donate a silent auction item, prize, be a judge, or support our endeavors please consider becoming a sponsor.  {{> main}}
+          If you or your company would like to donate a silent auction item, prize, be a judge, or support our endeavors please consider becoming a sponsor.  {{contact}}
         </p>
       </div>
     </section>
@@ -293,6 +299,14 @@
   </footer>
 </body>
 
-<template name="main">
-  {{contact}}
+<template name="circle">
+  <div class="circle {{#if small}}small-circle{{/if}} {{#if center}}center-circle{{/if}}">
+    <div class="circle__inner">
+      <div class="circle__wrapper">
+        <div class="circle__content">
+          {{{text}}}
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
